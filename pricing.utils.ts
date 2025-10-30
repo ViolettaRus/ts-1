@@ -27,3 +27,4 @@ const roundToCents = (value: number) => {
 	return Math.round(value * factor) / factor;
 }
 
+export { assertValidPrice, assertValidDiscount, assertValidMonths, applyDiscount, roundToCents };
