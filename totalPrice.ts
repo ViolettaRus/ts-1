@@ -1,7 +1,7 @@
 import { TotalPriceParams } from "./totalPrice.types"
 import { applyDiscount, assertValidDiscount, assertValidMonths, assertValidPrice, roundToCents } from "./pricing.utils"
 
-export const totalPrice = (params: TotalPriceParams) => {
+const totalPrice = (params: TotalPriceParams) => {
   const { price, discount = 0 } = params;
 
   assertValidPrice(price);
